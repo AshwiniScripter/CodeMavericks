@@ -59,7 +59,7 @@ def main():
         message = {"human": user_question, "AI": response['response']}
         st.session_state.chat_history.append(message)
 
-        # Display response in justified text
+
         st.markdown(f'<div class="context-info">{response["response"]}</div>', unsafe_allow_html=True)
 
 if __name__ == "__main__":
